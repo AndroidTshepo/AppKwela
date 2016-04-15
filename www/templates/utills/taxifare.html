@@ -1,0 +1,15 @@
+<ion-view title="Taxi Fare">
+    <ion-pane>
+        <ion-content>
+            <ion-list ng-repeat="fare in getTaxiFare">
+                <a class="item">
+
+                  <p>From {{fare.startPoint}} To {{fare.destination}}</p>
+                    <p>R {{fare.taxiFare}}</p></a>
+
+            </ion-list>
+
+        </ion-content>
+    </ion-pane>
+
+</ion-view>

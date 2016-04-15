@@ -1,0 +1,15 @@
+<ion-view title="Feed back">
+    <ion-pane>
+        <ion-content>
+
+            <ion-list ng-repeat="taxifair in taxifareResult">
+                <a class="item" ng-click=infoPopup(taxifair)>
+                    <ionic-letter-avatar  data={{taxifair.email}} shape="round"></ionic-letter-avatar>
+                    {{taxifair.email}} <p>{{taxifair.message}} {{taxifair.registration}}</p></a>
+
+            </ion-list>
+
+        </ion-content>
+    </ion-pane>
+
+</ion-view>

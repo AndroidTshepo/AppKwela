@@ -1,0 +1,33 @@
+<ion-view title="Add Taxi">
+    <ion-pane>
+
+        <ion-content>
+            <!--<img src="img/addTaxi.jpg" align="center" width="180dpi" height="180dpi">-->
+
+            <div class="list" ng-controller="addTaxiCtrl">
+
+                <label class="item item-input item-select">
+                    <div class="input-label">
+                        Association
+
+                    <select ng-modal="taxi">
+                        <option ng-repeat="assoc in taxiAssociations"  value="assoc.AssocName" data="assoc.AssocName">{{assoc.AssocName}}
+                        </option>
+                    </select>
+                        <!--<select ng-model="taxi.assoc.AssocName" ng-options="option.option for option in assoc.options"></select>-->
+                    </div>
+                </label>
+
+                <label class="item item-input">
+                    <input type="text" placeholder="Taxi Registration" ng-model="taxi.taxiReg">
+                </label>
+                <!--<button class="button button-assertive button-block " ng-click="addTaxi(taxi)">-->
+                <!--Add Taxi-->
+                <!--</button>-->
+                <button class="button button-dark button-block " ng-click="addTaxi(taxi)">Submit</button>
+
+            </div>
+        </ion-content>
+    </ion-pane>
+
+</ion-view>

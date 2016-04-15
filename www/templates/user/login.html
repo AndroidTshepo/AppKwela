@@ -1,0 +1,21 @@
+<ion-view title="appKwela" hide-back-button="true">
+    <ion-content padding="true" class="has-header" style="background: url(img/bridge_image.jpg)">
+        <form>
+            <img src="img/logo.png" width="100%" height="auto" style="width: 100%; height: auto;">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="" ng-model="creds.username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="creds.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ng-click="doLoginAction()" class="button button-assertive button-block">Log in</a>
+            <!--<div style="content: '';"><p>Or</p></div>-->
+            <a ui-sref='app-signup' class="button button-assertive button-block button-block">create an account</a>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="Nearby Places">
+    <ion-content class="padding">
+
+        <div class="card">
+            <div class="item">
+                <ui-gmap-google-map center="myMap.center" zoom="myMap.zoom" draggable="true" control="control" options="options">
+                    <ui-gmap-marker coords="myMarker.coords" options="myMarker.options" events="" idkey="myMarker.id">
+                    </ui-gmap-marker>
+                </ui-gmap-google-map>
+            </div>
+            <div class="item">
+                List of nearby places:
+            </div>
+            <div ng-repeat="place in places">
+                <div class="item item-divider">
+                    {{place.name}}
+                </div>
+                <div class="item">
+                    {{place.vicinity}}
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

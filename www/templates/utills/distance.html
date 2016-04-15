@@ -1,0 +1,47 @@
+<ion-view title="Fare">
+
+    <ion-content>
+        <div class="list list-inset">
+            <!--<label class="item item-input">-->
+                <!--<input id="start" type="text"  placeholder="Source">-->
+            <!--</label>-->
+            <!--<label class="item item-input">-->
+                <!--<input id="end" type="text" placeholder="Destination">-->
+            <!--</label>-->
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Starting Point
+                </div>
+                <select id="start">
+                    <option selected>Soweto</option>
+                    <option >Protoria</option>
+                    <option>Tembisa</option>
+                </select>
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Destination
+                </div>
+                <select id="end">
+                    <option selected>Centurion</option>
+                    <option >Johannesburg</option>
+                    <option>Midrand</option>
+                    <option>Gauteng Santon</option>
+                </select>
+            </label>
+
+
+
+            <button class="button button-block button-clear" ng-model="calcRoute()" disabled="true">
+                Get Direction
+            </button>
+        </div>
+        <div id="map"></div>
+
+    </ion-content>
+
+
+
+</ion-view>

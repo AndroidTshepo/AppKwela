@@ -1,0 +1,118 @@
+<ion-view title="appKwela">
+    <ion-nav-buttons side="left">
+        <button class="icon ion-android-share-alt" ng-click="shareViaTwitter()">
+           <!--Share-->
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="doLogoutAction()">
+            Logout
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list can-swipe="true">
+            <!--<ion-item class="item item-thumbnail-left" ng-repeat="data in dataList" type="item-text-wrap"-->
+            <!--href="#/tab/list/{{$index}}">-->
+            <!--<pre>{{data | json}}</pre>-->
+            <!--<ion-option-button class="button-assertive" ng-click="doDeleteRow(data.id)">-->
+            <!--DELETE-->
+            <!--</ion-option-button>-->
+            <!--</ion-item>-->
+
+            <div class="list">
+
+                <a class="item item-icon-left" href="#/tab/findTaxi">
+                    <div style="color:#880E4F"><i class="icon ion-android-bus"></i></div>
+                    Find Taxi
+                </a>
+
+                <a class="item item-icon-left" href="#/tab/locateRank">
+                    <div style="color: #2196F3"><i class="icon ion-android-locate"></i></div>
+                    Useful Locations
+                </a>
+
+                <!--<a class="item item-icon-left" href="#/tab/list/{{ }}">-->
+                <!--<i class="icon ion-map"></i>-->
+                <!--Find Rank-->
+                <!--</a>-->
+
+                <a class="item item-icon-left" href="#/tab/ratefeedback">
+                    <div style="color: #3F51B5"><i class="icon ion-thumbsup"></i></div>
+                    Rate Service
+                </a>
+
+                <a class="item item-icon-left" href="#/tab/traffic">
+                    <div style="color: #E91E63"><i class="icon ion-speedometer"></i></div>
+                    Traffic
+
+                </a>
+                <a class="item item-icon-left" href="#/tab/trafficFeeds">
+                    <div style="color: #009688"><i class="icon ion-social-rss"></i></div>
+                    News Feeds
+
+                </a>
+
+                <a class="item item-icon-left" href="#/tab/taxifare">
+                    <div style="color: #673AB7"><i class="icon ion-cash"></i></div>
+                    Check Taxi Fare
+
+                </a>
+
+                <a class="item item-icon-left" href="#/tab/distance">
+                    <div style="color: #CDDC39"><i class="icon ion-ios-navigate"></i></div>
+                    Distance
+
+                </a>
+
+                <!--<a class="item item-icon-left" href="#/tab/distance">-->
+                    <!--<i class="icon ion-ios-navigate"></i>-->
+                    <!--Distance and are-->
+
+                <!--</a>-->
+
+                <!--<a class="item item-icon-left" href="#">-->
+                <!--<i class="icon ion-person-stalker"></i>-->
+                <!--Friends-->
+                <!--<span class="badge badge-assertive">0</span>-->
+                <!--</a>-->
+
+                <div class="item item-divider" style="background-color:#C62828" aria-disabled="true">
+                   <div style="color: white"> Admin</div>
+                </div>
+
+                <a class="item item-icon-left" href="#/tab/scheduleTaxi">
+                    <div style="color: #673AB7"> <i class="icon ion-clock"></i></div>
+                    Schedule Taxi
+
+                </a>
+
+                <a class="item item-icon-left" href="#/tab/updateTaxiFare">
+                    <div style="color: #0D47A1">   <i class="icon ion-cash"></i></div>
+                    Taxi Fee Update
+
+                </a>
+                <a class="item item-icon-left" href="#/tab/updateRoute">
+                    <div style="color: #E65100">  <i class="icon ion-location"></i></div>
+                    Routes Update
+
+                </a>
+                <a class="item item-icon-left" href="#/tab/complainList">
+                    <div style="color: #795548">  <i class="icon ion-email-unread"></i></div>
+                    Messages
+                </a>
+                
+                <a class="item item-icon-left" href="#/tab/addTaxi">
+                    <div style="color: #607D8B"> <i class="icon ion-android-bus"></i></div>
+                    Add Taxi
+                </a>
+                
+                <a class="item item-icon-left" href="#/tab/addRoute">
+                    <div style="color: #B71C1C">  <i class="icon ion-map"></i></div>
+                    Add Route
+                </a>
+            </div>
+
+
+        </ion-list>
+    </ion-content>
+</ion-view>

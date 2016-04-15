@@ -1,0 +1,44 @@
+
+<ion-view title="Feed Back">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Complaint</div>
+            <div class="item item-body">
+                <!--Avoid html to validation -->
+                <form class="list" name="feedback" novalidate>
+
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Email</span>
+                        <input type="text" name="email" placeholder="Email"  ng-model="creds.useremail" ng-minlength="5" required>
+                    </label>
+
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label">Taxi Plate Number</span>
+                        <input type="text" name="platenumber" placeholder="Taxi Plate Number" ng-model="creds.plateNumber" ng-minlength="5" required>
+                    </label>
+                    <label class="item item-input item-floating-label" name="messageBox">
+                        <textarea  name="messageInfo" placeholder="Message" ng-model="creds.message" style="height: 85px" ng-minlength="8" required> </textarea>
+                    </label>
+
+                    <div class="spacer" style="width: 268px; height: 20px;"></div>
+                    <ion-checkbox ng-model="creds.complaint">Complaint</ion-checkbox>
+                    <ion-checkbox ng-model="creds.suggestion">Suggestion</ion-checkbox>
+                    <!--<ion-toggle toggle-class="toggle-dark" ng-checked="true" name="complaint">Complaint</ion-toggle>-->
+                    <!--<ion-toggle toggle-class="toggle-dark" name="suggestion">Suggestion</ion-toggle>-->
+                </form>
+            </div>
+        </div>
+            <div class="padding">
+                <!--Validating the email-->
+                <p ng-show="feedback.email.$error.required">* Email is required</p>
+                <p ng-show="feedback.email.$invalid && !feedback.email.$pristine">* Please use a valid email</p>
+                <p ng-show="feedback.email.$error.minlength"> </p>
+                <!--End of validating the email -->
+                <p ng-show="feedback.platenumber.$error.required">* Plate number is required</p>
+                <p ng-show="feedback.messageInfo.$error.required">* Message is required</p>
+            </div>
+
+
+        <button class="button button-assertive button-block " ng-disabled="feedback.$invalid" ng-click="feedBack()">Submit</button>
+    </ion-content>
+</ion-view>

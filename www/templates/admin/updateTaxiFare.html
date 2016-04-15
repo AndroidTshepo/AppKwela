@@ -1,0 +1,24 @@
+<ion-view title="Update Taxi Fare">
+    <ion-content overflow-scroll="true" padding="true" class="has-header" >
+        <img src="img/south-african-money.jpg" width="100%" height="auto" style="width: 100%; height: auto;">
+        <div class="list card">
+            <div class="item item-divider">Update Taxi fare</div>
+            <div class="item item-body">
+               <label class="item item-input item-select">
+                    <div class="input-label">
+                        Routes
+                    </div>
+                <select>
+                    <option ng-repeat="route in routes" >{{route.Origin}} -- {{route.Destination}}</option>
+                </select>
+            </label>
+                
+            <label class="item item-input">
+                <input type="text" placeholder="Taxi fare" ng-model="taxi.taxiFare">
+            </label>
+                    <button class="button button-dark button-block">Update fare</button>
+                
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

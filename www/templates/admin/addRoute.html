@@ -1,0 +1,22 @@
+<ion-view title="Add Route">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <img src="img/google-maps-icons.gif" width="100%" height="auto" style="width: 100%; height: auto;">
+        <div class="list card">
+            <div class="item item-divider">Add Route</div>
+            <div class="item item-body">
+                <form class="list" ng-controller="addRouteCtrl">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Start Point" ng-model="creds.startPoint">
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Destination" ng-model="creds.destination">
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Taxi Fare" ng-model="creds.taxiFare">
+                    </label>
+                    <button class="button button-dark button-block " ng-click="addRoute(creds)">Submit</button>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

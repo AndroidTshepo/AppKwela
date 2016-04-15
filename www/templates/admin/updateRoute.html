@@ -1,0 +1,33 @@
+<ion-view title="Update Route">
+
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <img src="img/route.jpeg" width="100%" height="22dpi" style="width: 100%; height: auto;">
+        <div class="list card">
+            <div class="item item-divider">Update Route</div>
+            <div class="item item-body">
+                
+                    <label class="item item-input item-select">
+                    <div class="input-label">
+                        Route
+                    </div>
+                <select>
+                    <option ng-repeat="route in routes" ng-model="taxi.taxiAssoc">{{route.Origin}} -- {{route.Destination}}</option>
+                </select>
+                </label>
+                
+                    <form class="list">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Start Point">
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Destination" >
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Taxi Fare" >
+                    </label>
+                    <button class="button button-dark button-block ">Submit</button>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
